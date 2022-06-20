@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB91C049280D688A00D01FE0 /* dlopenDemo.c in Sources */ = {isa = PBXBuildFile; fileRef = AB91C048280D688A00D01FE0 /* dlopenDemo.c */; };
+		AB94F00D281FD7DC002EE3C7 /* RuntimViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB94F00C281FD7DC002EE3C7 /* RuntimViewController.m */; };
+		AB94F01028214C66002EE3C7 /* NSObject+TestMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = AB94F00F28214C66002EE3C7 /* NSObject+TestMethod.m */; };
 		ABB5274427FECE0B00CAF573 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB5274327FECE0B00CAF573 /* AppDelegate.m */; };
 		ABB5274727FECE0B00CAF573 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB5274627FECE0B00CAF573 /* SceneDelegate.m */; };
 		ABB5274A27FECE0B00CAF573 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB5274927FECE0B00CAF573 /* ViewController.m */; };
@@ -16,9 +19,16 @@
 		ABB5275527FECE0C00CAF573 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB5275427FECE0C00CAF573 /* main.m */; };
 		ABB5275F27FECE3300CAF573 /* thread_create_demo.c in Sources */ = {isa = PBXBuildFile; fileRef = ABB5275B27FECE3300CAF573 /* thread_create_demo.c */; };
 		ABB5276027FECE3300CAF573 /* thread_mutex_demo.c in Sources */ = {isa = PBXBuildFile; fileRef = ABB5275C27FECE3300CAF573 /* thread_mutex_demo.c */; };
+		ABB5276527FED27400CAF573 /* attribute_demo.c in Sources */ = {isa = PBXBuildFile; fileRef = ABB5276427FED27400CAF573 /* attribute_demo.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB91C047280D688A00D01FE0 /* dlopenDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dlopenDemo.h; sourceTree = "<group>"; };
+		AB91C048280D688A00D01FE0 /* dlopenDemo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dlopenDemo.c; sourceTree = "<group>"; };
+		AB94F00B281FD7DC002EE3C7 /* RuntimViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimViewController.h; sourceTree = "<group>"; };
+		AB94F00C281FD7DC002EE3C7 /* RuntimViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimViewController.m; sourceTree = "<group>"; };
+		AB94F00E28214C66002EE3C7 /* NSObject+TestMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+TestMethod.h"; sourceTree = "<group>"; };
+		AB94F00F28214C66002EE3C7 /* NSObject+TestMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+TestMethod.m"; sourceTree = "<group>"; };
 		ABB5273F27FECE0B00CAF573 /* UnixSystemDevLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnixSystemDevLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB5274227FECE0B00CAF573 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ABB5274327FECE0B00CAF573 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -35,6 +45,8 @@
 		ABB5275C27FECE3300CAF573 /* thread_mutex_demo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = thread_mutex_demo.c; sourceTree = "<group>"; };
 		ABB5275D27FECE3300CAF573 /* thread_mutex_demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread_mutex_demo.h; sourceTree = "<group>"; };
 		ABB5275E27FECE3300CAF573 /* thread_create_demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread_create_demo.h; sourceTree = "<group>"; };
+		ABB5276327FED27400CAF573 /* attribute_demo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = attribute_demo.h; sourceTree = "<group>"; };
+		ABB5276427FED27400CAF573 /* attribute_demo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = attribute_demo.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +60,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB91C046280D685D00D01FE0 /* dyld */ = {
+			isa = PBXGroup;
+			children = (
+				AB91C047280D688A00D01FE0 /* dlopenDemo.h */,
+				AB91C048280D688A00D01FE0 /* dlopenDemo.c */,
+			);
+			path = dyld;
+			sourceTree = "<group>";
+		};
+		AB91C06C2810D50E00D01FE0 /* dispatch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = dispatch;
+			sourceTree = "<group>";
+		};
+		AB94F00A281FD79B002EE3C7 /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				AB94F00B281FD7DC002EE3C7 /* RuntimViewController.h */,
+				AB94F00C281FD7DC002EE3C7 /* RuntimViewController.m */,
+				AB94F00E28214C66002EE3C7 /* NSObject+TestMethod.h */,
+				AB94F00F28214C66002EE3C7 /* NSObject+TestMethod.m */,
+			);
+			path = runtime;
+			sourceTree = "<group>";
+		};
 		ABB5273627FECE0B00CAF573 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +112,10 @@
 				ABB5274627FECE0B00CAF573 /* SceneDelegate.m */,
 				ABB5274827FECE0B00CAF573 /* ViewController.h */,
 				ABB5274927FECE0B00CAF573 /* ViewController.m */,
+				AB94F00A281FD79B002EE3C7 /* runtime */,
+				AB91C06C2810D50E00D01FE0 /* dispatch */,
+				AB91C046280D685D00D01FE0 /* dyld */,
+				ABB5276227FED25400CAF573 /* attribute */,
 				ABB5276127FECE3700CAF573 /* thread */,
 				ABB5274B27FECE0B00CAF573 /* Main.storyboard */,
 				ABB5274E27FECE0C00CAF573 /* Assets.xcassets */,
@@ -92,6 +135,15 @@
 				ABB5275D27FECE3300CAF573 /* thread_mutex_demo.h */,
 			);
 			path = thread;
+			sourceTree = "<group>";
+		};
+		ABB5276227FED25400CAF573 /* attribute */ = {
+			isa = PBXGroup;
+			children = (
+				ABB5276327FED27400CAF573 /* attribute_demo.h */,
+				ABB5276427FED27400CAF573 /* attribute_demo.c */,
+			);
+			path = attribute;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,8 +217,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABB5274A27FECE0B00CAF573 /* ViewController.m in Sources */,
+				ABB5276527FED27400CAF573 /* attribute_demo.c in Sources */,
 				ABB5274427FECE0B00CAF573 /* AppDelegate.m in Sources */,
+				AB91C049280D688A00D01FE0 /* dlopenDemo.c in Sources */,
 				ABB5276027FECE3300CAF573 /* thread_mutex_demo.c in Sources */,
+				AB94F00D281FD7DC002EE3C7 /* RuntimViewController.m in Sources */,
+				AB94F01028214C66002EE3C7 /* NSObject+TestMethod.m in Sources */,
 				ABB5275527FECE0C00CAF573 /* main.m in Sources */,
 				ABB5274727FECE0B00CAF573 /* SceneDelegate.m in Sources */,
 				ABB5275F27FECE3300CAF573 /* thread_create_demo.c in Sources */,
@@ -312,8 +368,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UnixSystemDevLearn/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,6 +385,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.moji.pianshi.UnixSystemDevLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,8 +396,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UnixSystemDevLearn/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -354,6 +413,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.moji.pianshi.UnixSystemDevLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
